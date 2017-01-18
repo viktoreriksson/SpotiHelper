@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblSong = new System.Windows.Forms.Label();
             this.tmrSong = new System.Windows.Forms.Timer(this.components);
             this.txtLocation = new System.Windows.Forms.TextBox();
@@ -88,9 +89,9 @@
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.txtLocation);
             this.Controls.Add(this.lblSong);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmMain";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SpotiHelper";
             this.Load += new System.EventHandler(this.frmMain_Load);
